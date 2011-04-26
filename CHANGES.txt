@@ -1,0 +1,13 @@
+CHANGES for nsdjango
+====================
+
+trunk
+-----
+
+2011-04-26 0.1.1
+----------------
+
+  - added more debugging statements
+
+  - make egg not zip_safe since imp (Python 2.6.6) could not find modules
+

@@ -10,8 +10,8 @@ def find_ns_management_module(app_name):
     part = parts.pop()
     path = None
 
-##     if settings.DEBUG:
-##         print "Searching for managment module in %s ..." % app_name
+    if settings.DEBUG:
+        print "Searching for managment module in %s ..." % app_name
 
     try:
         module = app_name.split(".")
@@ -31,7 +31,10 @@ def find_ns_management_module(app_name):
             except Exception,e:
                 pass
 
-    return res and res.pop() or ''
+    management_module = res and res.pop() or ''
+    if settings.DEBUG:
+        print "Found in %s" % management_module
+    return management_module
 
 
 def execute_manager(settings_mod, argv=None):
