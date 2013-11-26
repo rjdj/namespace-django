@@ -22,9 +22,9 @@ import os
 from setuptools import setup, find_packages
 
 setup(name = "nsdjango",
-      version = "0.1.1",
+      version = "0.1.2",
       author = 'Christian Haudum',
-      author_email = 'christian.h@rjdj.me',
+      author_email = 'christian@rjdj.me',
       description = 'Supports namespace packages as Django apps.',
       url = 'http://github.com/organizations/rjdj',
       packages = find_packages('src'),
